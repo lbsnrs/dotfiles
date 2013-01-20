@@ -1,2 +1,4 @@
+# I have a backup helper script in dotfiles/bin/backup
+
 keyfile ~/.keys/tarsnap.key
 cachedir ~/.tarsnap-cache
