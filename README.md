@@ -1,4 +1,4 @@
-@lbsnrs does dotfiles ========
+# @lbsnrs does dotfiles
 
 This is just a repo with my public dotfiles based on the excellent
 [@holman][1]’s [dotfiles][2].
