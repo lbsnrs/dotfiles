@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# bootstraps the system
+
+BASEDIR="`pwd -P`"	# -P resolves all symbolic links
+
+for source in `find $BASEDIR -maxdepth 2 -name \*.symlink`; do
+	dest="$HOME/.`basename \"${source%.*}\"`"
+	echo "Linking $source to $dest..."
+	if [ -f $dest ]; then
+		echo "A file already exists at $dest."
+	else
+		ln -s $source $dest
+		echo "OK"
+	fi
+done

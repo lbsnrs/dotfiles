@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Just a simple script for backing important stuff up.
+# 
+# As you can see, I hardcode the home directory. 
+# Your mileage may vary.
+
+TIMESTAMP="`date -u +"%Y-%m-%dT%H:%M:%SZ"`"
+TARSNAP="`which tarsnap`"
+
+if [ -x $TARSNAP ]; then
+	$TARSNAP -c -f $TIMESTAMP ~/Code ~/Documents
+fi

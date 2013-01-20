@@ -1,0 +1,17 @@
+# Look for lines containing the comment "EDIT THIS LINE" and do it
+
+[hub]
+	protocol = https
+[user]
+	name = Andreas Liebschner	# EDIT THIS LINE
+	email = mail@lbsn.rs		# EDIT THIS LINE
+	helper = osxkeychain
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+[mergetool]
+	keepBackup = false
+[difftool]
+	prompt = false
+[help]
+	autocorrect = 1
